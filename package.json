@@ -1,0 +1,27 @@
+{
+  "name": "gatsby-starter-min",
+  "version": "0.1.0",
+  "description": "Minimalistic Gatsby Starter Template",
+  "main": "n/a",
+  "license": "MIT",
+  "author": "rusi@me.com",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rusi/gatsby-starter-min.git"
+  },
+  "dependencies": {
+    "gatsby": "^0.12.36",
+    "react-helmet": "^4.0.0",
+    "toml-js": "0.0.8"
+  },
+  "devDependencies": {},
+  "bugs": {
+    "url": "https://github.com/rusi/gatsby-starter-min/issues"
+  },
+  "homepage": "https://github.com/rusi/gatsby-starter-min#readme"
+}
