@@ -1,12 +1,16 @@
 # Minimalistic Gatsby Starter Template
 ---
-#### Minimalistic starter.
 
 # Installation
 ---
 Install this starter (assuming Gatsby is installed) by running from your CLI: 
 ```
-gatsby new min gh:rusi/gatsby-starter-min
+gatsby new your-site-dir gh:rusi/gatsby-starter-min
+```
+
+# Running in development
+```
+gatsby develop
 ```
 
 # Deploy
