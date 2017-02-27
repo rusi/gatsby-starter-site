@@ -3,10 +3,12 @@ import { prefixLink } from 'gatsby-helpers'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
 import FontAwesome from 'react-fontawesome'
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap'
+import Headroom from 'react-headroom'
 
 class SiteNav extends React.Component {
   render() {
     return (
+      <Headroom>
       <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
@@ -18,10 +20,11 @@ class SiteNav extends React.Component {
             <NavItem eventKey={1}><FontAwesome name="home" className={'navBarIcon'} /> Home</NavItem>
           </IndexLinkContainer>
           <LinkContainer to={prefixLink('/about/')}>
-            <NavItem eventKey={2}>About</NavItem>
+            <NavItem eventKey={2}><FontAwesome name="question" className={'navBarIcon'} /> About</NavItem>
           </LinkContainer>
         </Nav>
       </Navbar>
+      </Headroom>
     )
   }
 }
