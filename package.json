@@ -17,6 +17,7 @@
   "dependencies": {
     "gatsby": "^0.12.36",
     "react-helmet": "^4.0.0",
+    "react-responsive-grid": "^0.3.4",
     "react-typography": "^0.15.0",
     "toml-js": "0.0.8",
     "typography": "^0.15.8",

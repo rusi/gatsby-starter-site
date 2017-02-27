@@ -1,17 +1,21 @@
-/* @flow weak */
 import React, { PropTypes } from 'react'
-
-const defaultMessage = `
-Gatsby is currently using the default _template. You can override it by
-creating a React component at "/pages/_template.js".
-
-You can see what this default template does by visiting:
-https://github.com/gatsbyjs/gatsby/blob/master/lib/isomorphic/pages/_template.js
-`
-console.info(defaultMessage)
+import { Container } from 'react-responsive-grid'
+import { rhythm } from '../utils/typography'
 
 function template (props) {
-  return <div>{props.children}</div>
+  return (
+    <div>
+      <Container
+        style={{
+          maxWidth: 960,
+          padding: `${rhythm(1)} ${rhythm(3/4)}`,
+          //paddingTop: 0,
+        }}
+      >
+        {props.children}
+      </Container>
+    </div>
+  )
 }
 
 template.propTypes = { children: PropTypes.node }
