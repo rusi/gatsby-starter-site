@@ -4,6 +4,8 @@ import { rhythm } from '../utils/typography'
 
 import SiteNav from '../components/SiteNav'
 
+import '../css/main.css'
+
 function template (props) {
   return (
     <div>
