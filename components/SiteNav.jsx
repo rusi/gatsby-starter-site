@@ -1,6 +1,7 @@
 import React, {prefix} from 'react'
 import { prefixLink } from 'gatsby-helpers'
 import { Navbar, Nav, NavItem } from 'react-bootstrap'
+import FontAwesome from 'react-fontawesome'
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap'
 
 class SiteNav extends React.Component {
@@ -14,7 +15,7 @@ class SiteNav extends React.Component {
         </Navbar.Header>
         <Nav>
           <IndexLinkContainer to={prefixLink('/')}>
-            <NavItem eventKey={1}>Home</NavItem>
+            <NavItem eventKey={1}><FontAwesome name="home" className={'navBarIcon'} /> Home</NavItem>
           </IndexLinkContainer>
           <LinkContainer to={prefixLink('/about/')}>
             <NavItem eventKey={2}>About</NavItem>
