@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "gatsby": "^0.12.36",
+    "react": "^15.4.2",
     "react-helmet": "^4.0.0",
     "react-responsive-grid": "^0.3.4",
     "react-typography": "^0.15.0",
@@ -24,7 +25,13 @@
     "typography-plugin-code": "^0.15.2",
     "typography-theme-alton": "^0.15.7"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^3.16.1",
+    "eslint-config-airbnb": "^14.1.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^4.0.0",
+    "eslint-plugin-react": "^6.10.0"
+  },
   "bugs": {
     "url": "https://github.com/rusi/gatsby-starter-min/issues"
   },
