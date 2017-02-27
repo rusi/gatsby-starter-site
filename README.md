@@ -5,7 +5,7 @@
 ---
 Install this starter (assuming Gatsby is installed) by running from your CLI: 
 ```
-gatsby new your-site-dir gh:rusi/gatsby-starter-min
+gatsby new your-site-dir gh:rusi/gatsby-starter-site
 ```
 
 # Running in development
@@ -15,7 +15,7 @@ gatsby develop
 
 # Deploy
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rusi/gatsby-starter-min)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/rusi/gatsby-starter-site)
 
 # Customizations
 

@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-starter-min",
+  "name": "gatsby-starter-site",
   "version": "0.1.0",
   "description": "Minimalistic Gatsby Starter Template",
   "main": "n/a",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rusi/gatsby-starter-min.git"
+    "url": "git+https://github.com/rusi/gatsby-starter-site.git"
   },
   "dependencies": {
     "gatsby": "^0.12.36",
@@ -37,7 +37,7 @@
     "eslint-plugin-react": "^6.10.0"
   },
   "bugs": {
-    "url": "https://github.com/rusi/gatsby-starter-min/issues"
+    "url": "https://github.com/rusi/gatsby-starter-site/issues"
   },
-  "homepage": "https://github.com/rusi/gatsby-starter-min#readme"
+  "homepage": "https://github.com/rusi/gatsby-starter-site#readme"
 }
