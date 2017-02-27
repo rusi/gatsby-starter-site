@@ -1,18 +1,20 @@
-/* @flow weak */
-
 import React, { PropTypes } from 'react'
+import Helmet from "react-helmet"
 import { prefixLink } from 'gatsby-helpers'
 
-const defaultMessage = `
-Gatsby is currently using the default template for HTML. You can override
-this functionality by creating a React component at "/html.js"
+import { TypographyStyle, GoogleFont } from 'react-typography'
+import typography from './utils/typography'
 
-You can see what this default template does by visiting:
-https://github.com/gatsbyjs/gatsby/blob/master/lib/isomorphic/html.js
-`
-console.info(defaultMessage)
+const BUILD_TIME = new Date().getTime()
 
 function HTML (props) {
+  const head = Helmet.rewind()
+
+  let css
+  if (process.env.NODE_ENV === 'production') {
+    css = <style dangerouslySetInnerHTML={{ __html: require('!raw!./public/styles.css') }} />
+  }
+
   return (
     <html lang="en">
       <head>
@@ -22,10 +24,15 @@ function HTML (props) {
           name="viewport"
           content="width=device-width, initial-scale=1.0 maximum-scale=5.0"
         />
+        <TypographyStyle typography={typography} />
+        <GoogleFont typography={typography} />
+        {css}
+        {head.title.toComponent()}
+        {head.meta.toComponent()}
       </head>
       <body>
         <div id="react-mount" dangerouslySetInnerHTML={{ __html: props.body }} />
-        <script src={prefixLink('/bundle.js')} />
+        <script src={prefixLink('/bundle.js?t=${BUILD_TIME}')} />
       </body>
     </html>
   )

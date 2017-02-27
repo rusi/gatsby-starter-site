@@ -47,3 +47,7 @@ The md.js wrapper includes a [highlightjs](https://highlightjs.org) style which 
 
 See a [demo](https://highlightjs.org/static/demo/) of available styles that can be downloaded from https://github.com/isagalaev/highlight.js/tree/master/src/styles
 
+## Typography
+
+The template includes the use of [TypographyJS](http://kyleamathews.github.io/typography.js/)
+

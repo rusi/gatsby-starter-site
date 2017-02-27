@@ -17,7 +17,11 @@
   "dependencies": {
     "gatsby": "^0.12.36",
     "react-helmet": "^4.0.0",
-    "toml-js": "0.0.8"
+    "react-typography": "^0.15.0",
+    "toml-js": "0.0.8",
+    "typography": "^0.15.8",
+    "typography-plugin-code": "^0.15.2",
+    "typography-theme-alton": "^0.15.7"
   },
   "devDependencies": {},
   "bugs": {
