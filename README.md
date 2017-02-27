@@ -51,3 +51,8 @@ See a [demo](https://highlightjs.org/static/demo/) of available styles that can 
 
 The template includes the use of [TypographyJS](http://kyleamathews.github.io/typography.js/)
 
+## Bootstrap & NavBar
+
+The template uses Bootstrap template from [Bootswatch](https://bootswatch.com) and adds a navigation bar.
+
+You can change the theme by including a different Bootstrap stylesheet in html.js.
